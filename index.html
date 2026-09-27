@@ -89,15 +89,18 @@ body::before {
   gap: 10px;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #ff0055, #7b35ff);
-  box-shadow: 0 0 25px rgba(255, 0, 85, .3);
-  font-size: 14px;
+/* ROUND LOGO */
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 2px solid #d6a52f;
+  box-shadow: 0 0 20px rgba(214,165,47,.30);
+  flex-shrink: 0;
 }
 
 .nav-btn {
@@ -532,9 +535,9 @@ footer .owned strong {
     font-size: 16px;
   }
 
-  .brand-mark {
-    width: 34px;
-    height: 34px;
+  .brand-logo {
+    width: 44px;
+    height: 44px;
   }
 
   .hero {
@@ -588,32 +591,19 @@ footer .owned strong {
 <div class="bg-glow glow-1"></div>
 <div class="bg-glow glow-2"></div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 
   <a href="#" class="brand">
-  <img
-    src="logo.jpg"
-    <nav class="navbar">
 
-  <a href="#" class="brand">
     <img
       src="logo.jpg"
       alt="ST Legends Logo"
-      style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #d6a52f;"
+      class="brand-logo"
     >
+
     <span>ST Legends</span>
-  </a>
 
-  <a href="#generator" class="nav-btn">
-    Create Shorts
-  </a>
-
-</nav>
-  "
-    alt="ST Legends Logo"
-    style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #d6a52f;"
-  >
-  <span>ST Legends</span>
   </a>
 
   <a href="#generator" class="nav-btn">
@@ -902,4 +892,4 @@ document.getElementById("shortsForm").addEventListener("submit", function(event)
 </script>
 
 </body>
-</html>
+  </html>
